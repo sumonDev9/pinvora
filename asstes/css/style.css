@@ -1,17 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-     font-family: "Outfit", sans-serif;
+body {
+  font-family: "Outfit", sans-serif;
 }
 
-.text-white{
-    color: #FFFFFF;
+.text-white {
+  color: #ffffff;
 }
-.outfit{
-    font-family: "Outfit", sans-serif;
+.primary-c {
+  color: #06d86e;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
 }

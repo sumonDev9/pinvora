@@ -23,7 +23,7 @@
     <header>
       <!-- topbar -->
       <section
-        class="outfit text-white min-h-32 py-4 md:py-5 flex items-center"
+        class="outfit text-white py-4 md:py-5 flex items-center"
         style="
           background-image: url(./asstes/images/nav-img/nav-bg.png);
           background-size: cover;
@@ -45,7 +45,7 @@
                 alt="location"
               />
 
-              <h5 class="text-sm whitespace-nowrap">
+              <h5 class="text-base whitespace-nowrap">
                 123 Business Street, kolkata, NY 10001, IND
               </h5>
             </div>
@@ -61,7 +61,7 @@
                 alt="gmail"
               />
 
-              <h5 class="text-sm whitespace-nowrap">hello@leadsgorilla.io</h5>
+              <h5 class="text-base whitespace-nowrap">hello@leadsgorilla.io</h5>
             </div>
 
             <!-- separator -->
@@ -75,7 +75,7 @@
                 alt="clock"
               />
 
-              <h5 class="text-sm whitespace-nowrap">
+              <h5 class="text-base whitespace-nowrap">
                 Mon - Fri: 09:00 AM - 6:00 PM
               </h5>
             </div>
@@ -83,7 +83,7 @@
 
           <!-- icon div -->
           <div class="flex items-center gap-5 sm:gap-8 lg:gap-10">
-            <h4 class="text-white whitespace-nowrap">Follow Us:</h4>
+            <h4 class="text-white text-base whitespace-nowrap">Follow Us:</h4>
 
             <div class="flex items-center gap-3">
               <!-- Facebook -->
@@ -134,7 +134,73 @@
           </div>
         </div>
       </section>
+      <!-- navbar -->
+      <nav></nav>
     </header>
+    <main>
+      <!-- banner -->
+      <!-- banner -->
+      <section
+        class="outfit text-white flex items-center h-auto md:h-96"
+        style="
+          background-image:
+            url(./asstes/images/banner/banner-bg.png),
+            url(./asstes/images/banner/dark-bg.png);
+          background-size: cover, cover;
+          background-position: center, center;
+          background-repeat: no-repeat, no-repeat;
+        "
+      >
+        <div
+          class="flex items-center h-auto md:h-96 w-full py-12 md:py-0"
+          style="
+            background-image: url(./asstes/images/banner-img/banner-bg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+          "
+        >
+          <div
+            class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0"
+          >
+            <!-- text div -->
+            <div class="relative flex flex-col items-center">
+              <!-- Contact Us -->
+              <h2
+                class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white text-center"
+              >
+                CONTACT <span class="text-[#06D86E]">US</span>
+              </h2>
+
+              <!-- Button -->
+              <div class="relative mt-6 md:mt-2">
+                <img
+                  class="w-56 md:w-auto"
+                  src="./asstes/images/banner-img/banner-btn.png"
+                  alt=""
+                />
+
+                <h2
+                  class="absolute inset-0 flex items-center justify-center font-medium text-2xl md:text-4xl text-white"
+                >
+                  Home | Contact
+                </h2>
+              </div>
+            </div>
+
+            <!-- img div -->
+            <div class="w-48 sm:w-64 md:w-auto">
+              <img
+                class="w-full md:w-auto drop-shadow-[0_0_20px_#06D86E] drop-shadow-[0_0_45px_#06D86E]"
+                src="./asstes/images/banner-img/banner-r.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- js link -->
     <script src="/asstes/js/script.js"></script>
