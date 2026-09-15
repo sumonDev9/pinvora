@@ -1,23 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
     <!-- css link -->
-    <link rel="stylesheet" href="/asstes/css/style.css">
+    <link rel="stylesheet" href="/asstes/css/style.css" />
     <!--tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- topbar -->
+      <section
+        class="outfit text-white min-h-32 py-4 md:py-5 flex items-center"
+        style="
+          background-image: url(./asstes/images/nav-img/nav-bg.png);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="w-[90%] mx-auto text-white flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-8"
+        >
+          <!-- text div -->
+          <div
+            class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 lg:gap-5"
+          >
+            <!-- location -->
+            <div class="flex items-center gap-2">
+              <img
+                class="w-5 h-5 object-contain shrink-0"
+                src="./asstes/images/nav-img/location.png"
+                alt="location"
+              />
 
+              <h5 class="text-sm whitespace-nowrap">
+                123 Business Street, kolkata, NY 10001, IND
+              </h5>
+            </div>
+
+            <!-- separator -->
+            <div class="hidden sm:block h-5 w-px bg-white"></div>
+
+            <!-- GMAIL -->
+            <div class="flex items-center gap-2">
+              <img
+                class="w-5 h-5 object-contain shrink-0"
+                src="./asstes/images/nav-img/gmail.png"
+                alt="gmail"
+              />
+
+              <h5 class="text-sm whitespace-nowrap">hello@leadsgorilla.io</h5>
+            </div>
+
+            <!-- separator -->
+            <div class="hidden sm:block h-5 w-px bg-white"></div>
+
+            <!-- clock -->
+            <div class="flex items-center gap-2">
+              <img
+                class="w-5 h-5 object-contain shrink-0"
+                src="./asstes/images/nav-img/clock.png"
+                alt="clock"
+              />
+
+              <h5 class="text-sm whitespace-nowrap">
+                Mon - Fri: 09:00 AM - 6:00 PM
+              </h5>
+            </div>
+          </div>
+
+          <!-- icon div -->
+          <div class="flex items-center gap-5 sm:gap-8 lg:gap-10">
+            <h4 class="text-white whitespace-nowrap">Follow Us:</h4>
+
+            <div class="flex items-center gap-3">
+              <!-- Facebook -->
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 p-px rounded-full bg-gradient-to-b from-[#06D86E] to-[#003382]"
+              >
+                <div
+                  class="w-full h-full rounded-full bg-black flex items-center justify-center"
+                >
+                  <img
+                    class="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                    src="./asstes/images/nav-img/fb.png"
+                    alt="facebook"
+                  />
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 p-px rounded-full bg-gradient-to-b from-[#06D86E] to-[#003382]"
+              >
+                <div
+                  class="w-full h-full rounded-full bg-black flex items-center justify-center"
+                >
+                  <img
+                    class="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                    src="./asstes/images/nav-img/insta.png"
+                    alt="instagram"
+                  />
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 p-px rounded-full bg-gradient-to-b from-[#06D86E] to-[#003382]"
+              >
+                <div
+                  class="w-full h-full rounded-full bg-black flex items-center justify-center"
+                >
+                  <img
+                    class="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                    src="./asstes/images/nav-img/linkedin.png"
+                    alt="linkedin"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <!-- js link -->
-     <script src="/asstes/js/script.js"></script>
-</body>
+    <script src="/asstes/js/script.js"></script>
+  </body>
 </html>

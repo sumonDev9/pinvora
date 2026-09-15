@@ -2,8 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
      font-family: "Outfit", sans-serif;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
+.outfit{
+    font-family: "Outfit", sans-serif;
 }
