@@ -16,25 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script>
-  tailwind.config = {
-    theme: {
-      extend: {},
-      container: {
-        center: true,
-        padding: "1rem",
-        screens: {
-          sm: "100%",
-          md: "100%",
-          lg: "1024px",
-          xl: "1200px",
-        },
-      },
-    },
-  };
-</script>
+    
 
-<script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
         <header class="relative z-50">
@@ -220,7 +203,7 @@
     <main>
           <!-- banner -->
       <section
-        class="flex items-center w-full"
+        class="flex relative items-center w-full"
         style="
           background-image: url(./asstes/image/banner/dark-bg.png);
           background-size: cover;
@@ -240,9 +223,9 @@
           <div class="flex container px-4 2xl:px-0 mx-auto flex-col md:flex-row items-center justify-between  gap-10 md:gap-4 mt-12 md:mt-8">
             <!-- text div -->
             <div class="relative flex flex-col items-center">
-              <!-- Contact Us -->
+              <!-- Contact Us --> 
               <h2 class="text-5xl md:text-4xl lg:text-7xl font-bold text-white text-center">
-                CONTACT <span class="text-[#06D86E]">US</span>
+                Latest <span class="text-[#06D86E]">Blog</span>
               </h2>
 
               <!-- Button -->
@@ -250,7 +233,7 @@
                 <img class="w-full" src="./asstes/image/banner-img/banner-btn.png" alt="">
 
                 <h2 class="absolute inset-0 lg:-top-4 -top-2 flex items-center justify-center font-medium text-xl md:text-2xl lg:text-4xl text-white">
-                  Home | Contact
+                  Home | Latest Blog
                 </h2>
               </div>
             </div>
@@ -260,6 +243,11 @@
               <img class="w-full md:w-60 lg:w-auto drop-shadow-[0_0_20px_#06D86E] drop-shadow-[0_0_45px_#06D86E]" src="./asstes/image/blog-img/blog-banner-img.png" alt="">
             </div>
           </div>
+        </div>
+        <!-- white img -->
+        <div class="absolute bottom-0 w-full ">
+
+          <img class="w-full" src="./asstes/image/blog-details-img/banner-bottom-img.png" alt="">
         </div>
       </section>
       <!-- blog section -->
@@ -540,7 +528,7 @@ How to Find Businesses That Need a New Website          </h3>
 
 
     </main>
-    <footer>
+    
         
     <footer class="relative w-full h-auto"
     style="
@@ -841,7 +829,7 @@ How to Find Businesses That Need a New Website          </h3>
       </div>
 
     </footer>
-    </footer>
+    
     <!-- js link -->
     <script src="./asstes/js/script.js"></script>
   </body>

@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/asstes/css/style.css" />
+    <!--tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+        <header class="relative z-50">
+      <!-- topbar -->
+      <section
+        class="relative w-full py-4 md:py-6 h-32"
+        style="
+          background-image: url(./asstes/image/nav-img/nav-bg.png);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="container mx-auto px-4 2xl:px-0 flex flex-col xl:flex-row items-center justify-between gap-2 lg:gap-6">
+          <!-- text div -->
+          <div
+            class="flex flex-col text-white sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 lg:gap-5"
+          >
+            <!-- location -->
+            <div class="flex items-center gap-2">
+              <img
+                class="w-5 h-5 object-contain shrink-0"
+                src="./asstes/image/nav-img/location.png"
+                alt="location"
+              />
+
+              <h5 class="text-base whitespace-nowrap">
+                123 Business Street, kolkata, NY 10001, IND
+              </h5>
+            </div>
+
+            <!-- separator -->
+            <div class="hidden sm:block h-5 w-px bg-white"></div>
+
+            <!-- GMAIL -->
+            <div class="hidden sm:flex items-center gap-2  ">
+              <img
+                class="w-5 h-5 object-contain shrink-0"
+                src="./asstes/image/nav-img/gmail.png"
+                alt="gmail"
+              />
+
+              <h5 class="text-base whitespace-nowrap">hello@leadsgorilla.io</h5>
+            </div>
+
+            <!-- separator -->
+            <div class="hidden sm:block h-5 w-px bg-white "></div>
+
+            <div class="hidden lg:flex items-center gap-2  ">
+              <img
+                class="w-5 h-5 object-contain shrink-0"
+                src="./asstes/image/nav-img/gmail.png"
+                alt="gmail"
+              />
+
+              <h5 class="text-base whitespace-nowrap">Mon - Fri: 09:00 AM - 6:00 PM</h5>
+            </div>
+            <!-- clock -->
+            
+          </div>
+
+          <!-- icon div -->
+          <div class="flex items-center gap-5 hidden lg:flex  sm:gap-8 lg:gap-10">
+            <h4 class="text-white text-base whitespace-nowrap">Follow Us:</h4>
+
+            <div class="flex items-center gap-3">
+              <!-- Facebook -->
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 p-px rounded-full bg-gradient-to-b from-[#06D86E] to-[#003382]"
+              >
+                <div
+                  class="w-full h-full rounded-full bg-black flex items-center justify-center"
+                >
+                  <img
+                    class="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                    src="./asstes/image/nav-img/fb.png"
+                    alt="facebook"
+                  />
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 p-px rounded-full bg-gradient-to-b from-[#06D86E] to-[#003382]"
+              >
+                <div
+                  class="w-full h-full rounded-full bg-black flex items-center justify-center"
+                >
+                  <img
+                    class="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                    src="./asstes/image/nav-img/insta.png"
+                    alt="instagram"
+                  />
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 p-px rounded-full bg-gradient-to-b from-[#06D86E] to-[#003382]"
+              >
+                <div
+                  class="w-full h-full rounded-full bg-black flex items-center justify-center"
+                >
+                  <img
+                    class="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                    src="./asstes/image/nav-img/linkedin.png"
+                    alt="linkedin"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- navbar -->
+      <div class="absolute top-14 px-4 2xl:px-0 lg:top-6 translate-y-1/2 left-0 right-0 px-4 2xl:px-0 z-50 container mx-auto">
+  <nav class="w-full rounded-3xl md:rounded-full shadow-lg bg-gradient-to-r from-[#06D86E] to-[#012B9E] relative">
+    <div class="flex items-center justify-between p-3">
+      <!-- Logo -->
+      <div class="relative shrink-0">
+        <div class="relative flex items-center justify-center rounded-full bg-white w-24 h-16 sm:w-32 sm:h-24 lg:w-40 lg:h-20">
+          <img
+            class="w-full h-28 object-contain p-2"
+            src="./asstes/image/nav-img/logo.png"
+            alt="logo"
+          />
+        </div>
+      </div> 
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center justify-center gap-6 lg:gap-10 text-white text-base lg:text-lg">
+        <p class="cursor-pointer">Home</p>
+        <p class="cursor-pointer">Features</p>
+        <p class="cursor-pointer">Login</p>
+        <p class="cursor-pointer">Support</p>
+        <p class="cursor-pointer">Awards</p>
+        <p class="cursor-pointer">News</p>
+      </div> 
+
+      <!-- Action Area: Get Started + Mobile Menu Toggle -->
+      <div class="flex items-center gap-3 shrink-0">
+        <!-- Get Started (Desktop Only - Hidden on Mobile/Tablet) -->
+        <button class="hidden md:flex items-center gap-2 rounded-full bg-white px-4 py-4 sm:px-6 md:py-4 text-[#003382] font-semibold shadow-[0_0_20px_rgba(6,216,110,0.95)]">
+          <span class="whitespace-nowrap">Get Started</span>
+          <img
+            class="w-6 h-6 object-contain"
+            src="./asstes/image/nav-img/shopping.png"
+            alt="log-btn"
+          />
+        </button>
+
+        <!-- Mobile Menu Button (Hamburger Icon) -->
+        <button id="mobile-menu-btn" class="md:hidden text-white p-2 pr-4 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div> 
+    </div>
+
+    <!-- Mobile Menu Container (White Background, visible only on mobile/tablet) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-xl pb-6 pt-5 px-6 z-50 border border-gray-100">
+      <div class="flex flex-col items-center gap-4 text-gray-800 text-base sm:text-lg font-medium">
+        <p class="cursor-pointer hover:text-[#06D86E]">Home</p>
+        <p class="cursor-pointer hover:text-[#06D86E]">Features</p>
+        <p class="cursor-pointer hover:text-[#06D86E]">Login</p>
+        <p class="cursor-pointer hover:text-[#06D86E]">Support</p>
+        <p class="cursor-pointer hover:text-[#06D86E]">Awards</p>
+        <p class="cursor-pointer hover:text-[#06D86E]">News</p>
+        
+        <!-- Get Started (Mobile & Tablet Only) -->
+        <button class="mt-4 w-full justify-center flex items-center gap-2 rounded-full bg-[#003382] px-6 py-3 text-white font-semibold shadow-[0_0_20px_rgba(6,216,110,0.95)]">
+          <span class="whitespace-nowrap">Get Started</span>
+          <img
+            class="w-6 h-6 object-contain brightness-0 invert"
+            src="./asstes/image/nav-img/shopping.png"
+            alt="log-btn"
+          />
+        </button>
+      </div>
+    </div>
+  </nav>
+</div>
+        </header>
+          <main 
+    style="background-image: url('./asstes/image/login-img/login-bg.png');" 
+    class="bg-cover bg-no-repeat ">
+    
+    <!-- signin page -->
+    <section class="relative w-full py-24">
+        <div class=" container mx-auto md:mt-4  px-4 2xl:px-0 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16">
+            
+            <!-- Img Div (Left) -->
+             <div class="hidden lg:flex w-full lg:w-1/2 flex-col justify-center p-6 items-center relative">
+    
+    <!-- Top Section: Background Text and Badge -->
+    <div class="relative w-full flex items-center  justify-end h-40 mb-10">
+        <img src="./asstes/image/signin-img/signup.png" class="absolute w-12/12  -top-20  z-0  " alt="Sign Up Text Background">
+        <!-- shadow -->
+         <div class="absolute z-5 w-3/5 h-64 left-40 bottom-44 bg-[#06D86E]/20 blur-2xl rounded-full pointer-events-none"></div>
+
+        <!-- Foreground Badge -->
+        <img src="./asstes/image/signin-img/sinin-bach.png" class="absolute z-10 w-2/5   -bottom-0 left-40 drop-shadow-2xl" alt="Sign Up Badge">
+    </div>
+
+    <!-- Bottom Section: Box and Laptop overlapping -->
+  <div class="relative w-full h-80  lg:h-96">
+        
+        <img src="./asstes/image/signin-img/left-2.png" class="absolute  left-18 -top-28 w-5/5 z-10 " alt="Software Box">
+        <!-- shadow -->
+         <div class="absolute right-0 bottom-4 w-[60%] h-12 bg-[#06D86E]/70 blur-2xl rounded-full z-15 pointer-events-none"></div>
+
+        
+        <img src="./asstes/image/signin-img/left1.png" class="absolute  right-0 bottom-0 w-4/4 z-20 " alt="Laptop Dashboard">
+        
+    </div>
+
+</div>
+
+            
+            <!-- Text Div (Right) -->
+            
+          <div class="w-full lg:w-1/2 flex justify-center lg:justify-start items-center rounded-3xl mt-12 p-[1px]  bg-gradient-to-b from-[#06D86E] to-[#002799]">
+              
+                
+                <!-- Main Glassmorphism Card -->
+                <div class="relative w-full  pt-12 pb-0 flex flex-col items-center bg-cover bg-no-repeat rounded-3xl" style="background-image: url('./asstes/image/signin-img/cart2-bg.png');">
+
+                    
+                    <!-- Top Floating Logo with Green Glow Behind -->
+                    <div class="absolute -top-12 left-1/2 -translate-x-1/2  w-24 h-24 rounded-full bg-white p-2 shadow-[0_0_40px_rgba(6,216,110,0.85)]
+ flex items-center justify-center z-10">
+                        <img class="w-full h-full object-contain" src="./asstes/image/nav-img/logo.png" alt="Pinvora Logo">
+                    </div>
+
+                    <!-- Text Group -->
+                    <div class="text-center text-white mb-6 mt-12">
+                        <h1 class="text-4xl md:text-5xl font-bold">
+                          Create 
+     <span class="text-[#06D86E]">Your Account</span>
+  </h1>
+                        <p class="text-base md:text-lg mt-2">
+    Join Pinvora and start growing your business today
+  </p>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form class="w-full flex flex-col p-8 gap-5">
+                      <!-- name -->
+                       <div class="relative p-[1px] rounded-xl bg-gradient-to-r from-[#06D86E] to-[#0A4CB2]">
+  
+  <!-- Email Icon -->
+  <img src="./asstes/image/Contact-Information-img/user.png" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 object-contain z-20 opacity-80 brightness-200" alt="mail">
+  
+  <!-- Input Box -->
+  <input type="email" placeholder="Full Name" class="w-full rounded-xl bg-[#030a1c] pl-11 pr-4 py-3.5 text-sm text-white placeholder:text-white outline-none relative z-10 block">
+                      </div>
+
+                        <!-- Email ID Field -->
+                    <div class="relative p-[1px] rounded-xl bg-gradient-to-r from-[#06D86E] to-[#0A4CB2]">
+  
+  <!-- Email Icon -->
+  <img src="./asstes/image/Contact-Information-img/mail.png" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 object-contain z-20 opacity-80 brightness-200" alt="mail">
+  
+  <!-- Input Box -->
+  <input type="email" placeholder="Email ID" class="w-full rounded-xl bg-[#030a1c] pl-11 pr-4 py-3.5 text-sm text-white placeholder:text-white outline-none relative z-10 block">
+                      </div>
+
+                      <!-- ph no -->
+                       <div class="relative p-[1px] rounded-xl bg-gradient-to-r from-[#06D86E] to-[#0A4CB2]">
+  
+  <!-- Email Icon -->
+  <img src="./asstes/image/Contact-Information-img/ph.png" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 object-contain z-20 opacity-80 brightness-200" alt="mail">
+  
+  <!-- Input Box -->
+  <input type="email" placeholder="Phone Number" class="w-full rounded-xl bg-[#030a1c] pl-11 pr-4 py-3.5 text-sm text-white placeholder:text-white outline-none relative z-10 block">
+                      </div>
+
+                      <!-- Password Field -->
+                     <div class="relative p-[1px] rounded-xl bg-gradient-to-r from-[#06D86E] to-[#0A4CB2]">
+                     <div class="relative w-full rounded-xl bg-[#030a1c] flex items-center px-4 py-3.5">
+    
+    <!-- Password Icon -->
+    <img src="./asstes/image/login-img/passowed-icon.png" class="w-6 h-6 object-contain opacity-80 brightness-200" alt="password">
+    
+    <!-- Input Box -->
+    <input type="password" placeholder="Password" class="w-full bg-transparent pl-4 pr-10 text-sm text-white placeholder:text-white outline-none" required="">
+    
+    <!-- Eye Icon Button -->
+    <button type="button" class="absolute right-4 top-1/2 -translate-y-1/2 opacity-70 hover:opacity-100 transition-opacity">
+      <img src="./asstes/image/login-img/eys.png" class="w-6 h-6 object-contain" alt="toggle eye">
+    </button>
+    
+                          </div>
+                              </div>
+
+
+                              <!-- Password Field -->
+                     <div class="relative p-[1px] rounded-xl bg-gradient-to-r from-[#06D86E] to-[#0A4CB2]">
+                     <div class="relative w-full rounded-xl bg-[#030a1c] flex items-center px-4 py-3.5">
+    
+    <!-- Password Icon -->
+    <img src="./asstes/image/login-img/passowed-icon.png" class="w-6 h-6 object-contain opacity-80 brightness-200" alt="password">
+    
+    <!-- Input Box -->
+    <input type="password" placeholder="Confirm Password" class="w-full bg-transparent pl-4 pr-10 text-sm text-white placeholder:text-white outline-none" required="">
+    
+    <!-- Eye Icon Button -->
+    <button type="button" class="absolute right-4 top-1/2 -translate-y-1/2 opacity-70 hover:opacity-100 transition-opacity">
+      <img src="./asstes/image/login-img/eys.png" class="w-6 h-6 object-contain" alt="toggle eye">
+    </button>
+    
+                          </div>
+                              </div>
+
+
+                        <!-- Remember Me & Forgot Password -->
+                        <div class="flex items-center justify-between text-base font-normal mt-2">
+                          <label class="flex items-center gap-3  text-base font-normal cursor-pointer select-none">
+  <input 
+    type="checkbox" 
+    class="w-6 h-6 bg-[#030a1c] accent-[#06D86E] cursor-pointer" 
+  />
+  <span class="text-white">I Agree to the Terms & Conditions and Privacy Policy</span>
+</label>
+
+                            
+                        </div>
+
+
+                        
+                        
+
+                    </form>
+                    <div class="w-full mb-6  px-8  bg-cover bg-no-repeat " style="background-image: url('./asstes/image/login-img/cart2-bottom-bg.png');">
+                          <!-- Sign In Button -->
+                        <button type="submit" class="mt-4 w-full flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#06D86E] to-[#0A4CB2] px-6 py-6 text-white text-lg font-medium hover:opacity-95 active:scale-[0.99] transition-all shadow-[0_0_20px_rgba(6,216,110,0.2)]">
+                            <span class="flex-1 text-center tracking-wide">Sign in</span>
+                                  <img src="./asstes/image/Contact-Information-img/arrow.png" alt="">
+                        </button>
+
+                        <!-- Bottom Register Text -->
+                        <div class="text-center font-normal text-white text-xl my-6">
+                            Don't have an account? 
+                            <a href="#" class="text-[#06D86E] font-semibold hover:underline ml-1">Create Free Account</a>
+                        </div>
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+        </main>
+        
+        
+    <!-- js link -->
+    <script src="./asstes/js/script.js"></script>
+  </body>
+</html>
