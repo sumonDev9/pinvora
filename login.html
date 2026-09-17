@@ -129,73 +129,87 @@
         </div>
       </section>
       <!-- navbar -->
-      <div class="absolute top-14 px-4 2xl:px-0 lg:top-6 translate-y-1/2 left-0 right-0 px-4 2xl:px-0 z-50 container mx-auto">
-  <nav class="w-full rounded-3xl md:rounded-full shadow-lg bg-gradient-to-r from-[#06D86E] to-[#012B9E] relative">
-    <div class="flex items-center justify-between p-3">
-      <!-- Logo -->
-      <div class="relative shrink-0">
-        <div class="relative flex items-center justify-center rounded-full bg-white w-24 h-16 sm:w-32 sm:h-24 lg:w-40 lg:h-20">
-          <img
-            class="w-full h-28 object-contain p-2"
-            src="./asstes/image/nav-img/logo.png"
-            alt="logo"
-          />
-        </div>
-      </div> 
-
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center justify-center gap-6 lg:gap-10 text-white text-base lg:text-lg">
-        <p class="cursor-pointer">Home</p>
-        <p class="cursor-pointer">Features</p>
-        <p class="cursor-pointer">Login</p>
-        <p class="cursor-pointer">Support</p>
-        <p class="cursor-pointer">Awards</p>
-        <p class="cursor-pointer">News</p>
-      </div> 
-
-      <!-- Action Area: Get Started + Mobile Menu Toggle -->
-      <div class="flex items-center gap-3 shrink-0">
-        <!-- Get Started (Desktop Only - Hidden on Mobile/Tablet) -->
-        <button class="hidden md:flex items-center gap-2 rounded-full bg-white px-4 py-4 sm:px-6 md:py-4 text-[#003382] font-semibold shadow-[0_0_20px_rgba(6,216,110,0.95)]">
-          <span class="whitespace-nowrap">Get Started</span>
-          <img
-            class="w-6 h-6 object-contain"
-            src="./asstes/image/nav-img/shopping.png"
-            alt="log-btn"
-          />
-        </button>
-
-        <!-- Mobile Menu Button (Hamburger Icon) -->
-        <button id="mobile-menu-btn" class="md:hidden text-white p-2 pr-4 focus:outline-none">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div> 
-    </div>
-
-    <!-- Mobile Menu Container (White Background, visible only on mobile/tablet) -->
-    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-xl pb-6 pt-5 px-6 z-50 border border-gray-100">
-      <div class="flex flex-col items-center gap-4 text-gray-800 text-base sm:text-lg font-medium">
-        <p class="cursor-pointer hover:text-[#06D86E]">Home</p>
-        <p class="cursor-pointer hover:text-[#06D86E]">Features</p>
-        <p class="cursor-pointer hover:text-[#06D86E]">Login</p>
-        <p class="cursor-pointer hover:text-[#06D86E]">Support</p>
-        <p class="cursor-pointer hover:text-[#06D86E]">Awards</p>
-        <p class="cursor-pointer hover:text-[#06D86E]">News</p>
+      <div class="absolute top-14 px-4 2xl:px-0 lg:top-6 translate-y-1/2 left-0 right-0 z-50 container mx-auto">
+  <!-- Navbar wrapper with outer blur glow -->
+  <div class="rounded-3xl md:rounded-full p-[1px] bg-gradient-to-r from-[#06D86E] via-[#012B9E] to-[#012B9E] shadow-[0_0_25px_rgba(1,43,158,0.6)]">
+    
+    <!-- Main Navbar with inner thin border -->
+    <nav class="w-full rounded-3xl md:rounded-full bg-gradient-to-r from-[#06D86E] to-[#012B9E] relative border border-white/20 backdrop-blur-sm">
+      <div class="flex items-center justify-between p-3">
         
-        <!-- Get Started (Mobile & Tablet Only) -->
-        <button class="mt-4 w-full justify-center flex items-center gap-2 rounded-full bg-[#003382] px-6 py-3 text-white font-semibold shadow-[0_0_20px_rgba(6,216,110,0.95)]">
-          <span class="whitespace-nowrap">Get Started</span>
-          <img
-            class="w-6 h-6 object-contain brightness-0 invert"
-            src="./asstes/image/nav-img/shopping.png"
-            alt="log-btn"
-          />
-        </button>
+        <!-- Logo -->
+        <div class="relative shrink-0">
+          <div class="relative flex items-center justify-center rounded-full bg-white w-24 h-16 sm:w-32 sm:h-24 lg:w-40 lg:h-20 shadow-[0_0_15px_rgba(6,216,110,0.3)]">
+            <img
+              class="w-full h-28 object-contain p-2"
+              src="./asstes/image/nav-img/logo.png"
+              alt="logo"
+            />
+          </div>
+        </div> 
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center justify-center gap-6 lg:gap-10 text-white text-base lg:text-lg h-full py-2">
+          
+          <div class="relative flex flex-col items-center cursor-pointer pb-2">
+            <span class="font-medium text-white">Home</span>
+            <div class="absolute -bottom-2.5 flex flex-col items-center w-20">
+              <span class="w-3 h-3 bg-[#012B9E] border border-[#67FFB3]/50 rounded-full z-10"></span>
+              <span class="w-full h-2 rounded-full bg-gradient-to-r from-transparent via-[#67FFB3] to-transparent  -mt-[4px] "></span>
+            </div>
+          </div>
+
+          <p class="cursor-pointer hover:text-white/80 transition-all duration-200">Features</p>
+          <p class="cursor-pointer hover:text-white/80 transition-all duration-200">Login</p>
+          <p class="cursor-pointer hover:text-white/80 transition-all duration-200">Support</p>
+          <p class="cursor-pointer hover:text-white/80 transition-all duration-200">Awards</p>
+          <p class="cursor-pointer hover:text-white/80 transition-all duration-200">News</p>
+        </div> 
+
+        <!-- Action Area: Get Started + Mobile Menu Toggle -->
+        <div class="flex items-center gap-3 shrink-0">
+          <!-- Get Started -->
+          <button class="hidden md:flex items-center gap-2 rounded-full bg-white px-5 py-3 sm:px-6 text-[#003382] font-semibold transition-all duration-300 hover:scale-105 shadow-[0_0_25px_rgba(6,216,110,0.8)] border border-green-300/50">
+            <span class="whitespace-nowrap">Get Started</span>
+            <img
+              class="w-6 h-6 object-contain"
+              src="./asstes/image/nav-img/shopping.png"
+              alt="log-btn"
+            />
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden text-white p-2 pr-4 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://w3.org">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div> 
       </div>
-    </div>
-  </nav>
+
+      <!-- Mobile Menu Container -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-xl pb-6 pt-5 px-6 z-50 border border-gray-100">
+        <div class="flex flex-col items-center gap-4 text-gray-800 text-base sm:text-lg font-medium">
+          <p class="cursor-pointer hover:text-[#06D86E]">Home</p>
+          <p class="cursor-pointer hover:text-[#06D86E]">Features</p>
+          <p class="cursor-pointer hover:text-[#06D86E]">Login</p>
+          <p class="cursor-pointer hover:text-[#06D86E]">Support</p>
+          <p class="cursor-pointer hover:text-[#06D86E]">Awards</p>
+          <p class="cursor-pointer hover:text-[#06D86E]">News</p>
+          
+          <!-- Get Started -->
+          <button class="mt-4 w-full justify-center flex items-center gap-2 rounded-full bg-[#003382] px-6 py-3 text-white font-semibold shadow-[0_0_20px_rgba(6,216,110,0.95)]">
+            <span class="whitespace-nowrap">Get Started</span>
+            <img
+              class="w-6 h-6 object-contain brightness-0 invert"
+              src="./asstes/image/nav-img/shopping.png"
+              alt="log-btn"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
 </div>
         </header>
 
